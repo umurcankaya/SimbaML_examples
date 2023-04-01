@@ -1,0 +1,1 @@
+In order to run our experiment with the biochemical model, run the Notebook `SimbaML_Biochemical_Pathway_Forecasting.ipynb`. 

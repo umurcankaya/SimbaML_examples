@@ -1,0 +1,1 @@
+In order to run the Covid simulation with data augmentation from the SIR model, run the Notebook `SimbaML_Covid_Data_Augmentation.ipynb`. 

@@ -1,0 +1,43 @@
+plugins = [
+  "simba_ml.prediction.time_series.models.keras",
+  "simba_ml.prediction.time_series.models.pytorch_lightning"
+]
+
+metrics = [
+  "mean_absolute_error",
+  "mean_squared_error",
+  "mean_absolute_percentage_error",
+  "normalized_root_mean_squared_error",
+]
+
+[[models]]
+id = "KerasDenseNeuralNetwork"
+
+#[[models]]
+#id = "PytorchLightningDenseNeuralNetwork"
+
+[[models]]
+id = "DecisionTreeRegressor"
+
+[[models]]
+id = "LinearRegressor"
+
+[[models]]
+id = "NearestNeighborsRegressor"
+
+[[models]]
+id = "RandomForestRegressor"
+
+[[models]]
+id = "SVMRegressor"
+
+
+[data]
+synthetic = "/transformed_data_with_noise_100/"
+split_axis = "vertical"
+test_split = 0.2
+
+[data.time_series]
+num_species = 1
+input_length = 5
+output_length = 3
